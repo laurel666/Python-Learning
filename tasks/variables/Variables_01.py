@@ -29,3 +29,16 @@
 """
 
 # Напиши решение ниже.
+first_name = " анна "
+last_name = "иванова  "
+city = "  москва"
+birth_year = 2001
+current_year = 2026
+
+first_name = first_name.strip().title()
+last_name = last_name.strip().title()
+city = city.strip().title()
+
+full_name = f"{first_name} {last_name}"
+age = current_year - birth_year
+print(f"{full_name}, {age} лет, г. {city}")
