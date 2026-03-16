@@ -32,3 +32,19 @@
 """
 
 # Напиши решение ниже.
+
+raw_first_name = "   ivan"
+raw_last_name = "petrov  "
+raw_age = "29"
+raw_height = "181.4"
+raw_city = "  saint petersburg "
+
+first_name = raw_first_name.strip().title()
+last_name = raw_last_name.strip().title()
+city = raw_city.strip().title()
+age = int(raw_age)
+height = float(raw_height)
+profile_summary = f"{first_name} {last_name}, {age} years, {height} cm, {city}"
+
+print(profile_summary)
+print(f"Type of age: {type(age)}\nType of height: {type(height)}")

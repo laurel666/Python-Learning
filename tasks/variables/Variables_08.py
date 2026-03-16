@@ -25,3 +25,15 @@
 """
 
 # Напиши решение ниже.
+
+length_cm = 40
+width_cm = 30
+height_cm = 20
+weight_kg = 6.5
+price_per_kg = 85
+
+volume_cm3 = length_cm * width_cm * height_cm
+weight_cost = weight_kg * price_per_kg
+report = f"Dimensions: {length_cm} cm x {width_cm} cm x {height_cm} cm, Volume: {volume_cm3} cm3, Delivery Cost: {weight_cost}"
+
+print(report)

@@ -204,3 +204,140 @@ print(summary)
 
 Почему твой вариант особенно хороший:
 ты не просто решил задачу, а сделал это понятным и профессионально читаемым способом.
+
+Variables_07 — ✔
+
+Замечание:
+решение корректное. Имя гостя очищено правильно, итог посчитан верно, а чек собран в многострочную строку.
+
+Что особенно хорошо:
+
+- ты использовал многострочную строку именно по задаче;
+- имя очищено и приведено к аккуратному виду;
+- итоговая сумма выделена в отдельную переменную;
+- вывод получился очень читаемым.
+
+Что можно улучшить:
+
+- переменную `guest_name` можно было сначала оставить как "сырую", а затем отдельно создать `clean_guest_name`,
+  но это именно стилистическое улучшение, а не ошибка.
+
+Pythonic вариант:
+
+```python
+drink_name = "Cappuccino"
+drink_price = 240
+dessert_name = "Cheesecake"
+dessert_price = 320
+guest_name = "  maria ".strip().title()
+
+total_sum = drink_price + dessert_price
+receipt = f"""Guest: {guest_name}
+{drink_name}: {drink_price}
+{dessert_name}: {dessert_price}
+Total: {total_sum}"""
+
+print(receipt)
+```
+
+Variables_08 — ✔
+
+Замечание:
+решение корректное. Объём посчитан верно, стоимость доставки по весу тоже вычислена правильно.
+
+Что особенно хорошо:
+
+- формула объёма составлена верно;
+- стоимость доставки рассчитана без лишних действий;
+- итоговая строка содержит все нужные части отчёта.
+
+Что можно улучшить:
+
+- `weight_cost` можно назвать чуть точнее: `delivery_cost`;
+- так как это денежное значение, вывод можно оформить через `.2f`, чтобы получить `552.50` вместо `552.5`.
+
+Pythonic вариант:
+
+```python
+length_cm = 40
+width_cm = 30
+height_cm = 20
+weight_kg = 6.5
+price_per_kg = 85
+
+volume_cm3 = length_cm * width_cm * height_cm
+delivery_cost = weight_kg * price_per_kg
+report = (
+    f"Dimensions: {length_cm} cm x {width_cm} cm x {height_cm} cm, "
+    f"Volume: {volume_cm3} cm3, Delivery Cost: {delivery_cost:.2f}"
+)
+
+print(report)
+```
+
+Variables_09 — ✔ отлично
+
+Замечание:
+решение полностью корректное. Ты сделал именно независимую копию списка и наглядно показал,
+что после изменения `cart_items` резервная копия не изменилась.
+
+Что особенно хорошо:
+
+- использован правильный метод `copy()`;
+- задача на различие между ссылкой и копией решена точно по смыслу;
+- вывод хорошо демонстрирует результат.
+
+Pythonic вариант:
+
+```python
+cart_items = ["milk", "bread", "tea"]
+cart_backup = cart_items.copy()
+
+cart_items.append("coffee")
+
+print("Cart items:", cart_items)
+print("Cart backup:", cart_backup)
+```
+
+Variables_10 — в работе
+
+Замечание:
+решение корректное. Ты правильно очистил строки, преобразовал типы и отдельно показал,
+что `age` стал `int`, а `height` стал `float`.
+
+Что особенно хорошо:
+
+- сохранено разделение между сырыми значениями и обработанными;
+- имя, фамилия и город приведены к аккуратному виду;
+- типы преобразованы именно так, как требовалось по условию;
+- итоговая строка профиля собрана понятно и читаемо.
+
+Что можно улучшить:
+
+- вывод типов через `type(...)` корректный, но в будущем можно будет отдельно учиться
+  печатать более пользовательский вывод, если задача не учебная, а прикладная.
+
+Pythonic вариант:
+
+```python
+raw_first_name = "   ivan"
+raw_last_name = "petrov  "
+raw_age = "29"
+raw_height = "181.4"
+raw_city = "  saint petersburg "
+
+first_name = raw_first_name.strip().title()
+last_name = raw_last_name.strip().title()
+city = raw_city.strip().title()
+age = int(raw_age)
+height = float(raw_height)
+
+profile_summary = f"{first_name} {last_name}, {age} years, {height} cm, {city}"
+
+print(profile_summary)
+print(f"Type of age: {type(age)}")
+print(f"Type of height: {type(height)}")
+```
+
+Почему твой вариант хороший:
+это уже уверенное решение, в котором видно понимание подготовки данных, преобразования типов и форматирования вывода.

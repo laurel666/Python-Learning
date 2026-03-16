@@ -7,7 +7,7 @@
 
 Текущий прогресс:
 
-- `[ ] variables` — теория и задачи готовы, ждём решения
+- `[✓] variables`
 - `[ ] conditions`
 - `[ ] loops`
 - `[ ] functions`

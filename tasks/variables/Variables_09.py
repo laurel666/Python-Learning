@@ -24,3 +24,9 @@ cart_items = ["milk", "bread", "tea"]
 """
 
 # Напиши решение ниже.
+
+cart_items = ["milk", "bread", "tea"]
+cart_backup = cart_items.copy()
+cart_items.append("coffee")
+print("Cart items:", cart_items)
+print("Cart backup:", cart_backup)

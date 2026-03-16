@@ -33,3 +33,16 @@ Total: 560
 """
 
 # Напиши решение ниже.
+
+drink_name = "Cappuccino"
+drink_price = 240
+dessert_name = "Cheesecake"
+dessert_price = 320
+guest_name = "  maria ".strip().title()
+total_sum = drink_price + dessert_price
+receipt = f"""Guest: {guest_name}
+{drink_name}: {drink_price}
+{dessert_name}: {dessert_price}
+Total: {total_sum}"""
+
+print(receipt)
