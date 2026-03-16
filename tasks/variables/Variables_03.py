@@ -23,3 +23,12 @@
 """
 
 # Напиши решение ниже.
+
+hours = 1
+minutes = 47
+seconds = 35
+
+total_seconds = hours * 3600 + minutes * 60 + seconds
+total_minutes = hours * 60 + minutes
+
+print(f"Звонок длился {hours} ч {minutes} мин {seconds} сек ({total_seconds} секунд)")
