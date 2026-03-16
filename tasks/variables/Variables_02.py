@@ -25,3 +25,16 @@
 """
 
 # Напиши решение ниже.
+
+item_price = 1899.90
+quantity = 2
+discount_percent = 15
+delivery_price = 249
+
+total_price = item_price * quantity
+discount_amount = total_price * discount_percent / 100
+final_price = total_price - discount_amount + delivery_price
+print(f"Стоимость товаров без скидки: {total_price:.2f} руб.")
+print(f"Размер скидки: {discount_amount:.2f} руб.")
+print(f"Стоимость доставки: {delivery_price:.2f} руб.")
+print(f"Итоговая сумма с учётом скидки и доставки: {final_price:.2f} руб.")
