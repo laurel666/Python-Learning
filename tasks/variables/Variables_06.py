@@ -22,3 +22,10 @@ user_data = (104, "  elena petrova ", "premium", True)
 """
 
 # Напиши решение ниже.
+
+user_data = (104, "  elena petrova ", "premium", True)
+user_id, raw_user_name, plan, is_active = user_data
+user_name = raw_user_name.strip().title()
+summary = f"ID: {user_id} | User: {user_name} | Plan: {plan} | Active: {is_active}"
+
+print(summary)

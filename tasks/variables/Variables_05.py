@@ -25,3 +25,14 @@
 """
 
 # Напиши решение ниже.
+
+usd_amount = "125.5"
+usd_to_rub_rate = 91.37
+fee_percent = 1.8
+
+usd_amount = float(usd_amount)
+rub_amount = usd_amount * usd_to_rub_rate
+fee = rub_amount * fee_percent / 100
+final_amount_rub = rub_amount - fee
+
+print(f"Сумма пополнеия составляет {rub_amount:.2f} руб. Комиссия: {fee:.2f} руб. Итоговая сумма зачисления составила {final_amount_rub:.2f} руб.")
