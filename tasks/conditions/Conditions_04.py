@@ -29,3 +29,15 @@
 """
 
 # Напиши решение ниже.
+
+total_spent = 78000
+client_status = "Basic"
+
+if total_spent >= 100000:
+    client_status = "VIP"
+elif total_spent >= 50000:
+    client_status = "Gold"
+elif total_spent >= 10000:
+    client_status = "Silver"
+
+print(f"Статус клиента: {client_status}")

@@ -27,3 +27,8 @@
 """
 
 # Напиши решение ниже.
+
+order_total = 2450
+delivery_price = 0 if order_total >= 3000 else 299
+
+print(f"Стоимость доставки: {delivery_price}")

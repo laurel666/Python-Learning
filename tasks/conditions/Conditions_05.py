@@ -31,3 +31,10 @@
 """
 
 # Напиши решение ниже.
+
+role = " editor "
+is_blocked = False
+role = role and role.strip().lower()
+has_access = not is_blocked and role in ("admin", "editor")
+
+print("Доступ в админ-панель разрешён" if has_access else "Доступ в админ-панель запрещён")

@@ -28,3 +28,13 @@
 """
 
 # Напиши решение ниже.
+
+amount = 18500
+fee = 30
+
+if amount >= 10000:
+    fee = amount * 0.01
+elif amount >= 1000:
+    fee = amount * 0.015
+
+print(f"Комиссия: {fee}")

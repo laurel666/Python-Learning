@@ -28,3 +28,9 @@
 """
 
 # Напиши решение ниже.
+
+is_employee = True
+has_pass = False
+has_access = is_employee and has_pass
+
+print("Доступ разрешен" if has_access else "Доступ запрещён")
