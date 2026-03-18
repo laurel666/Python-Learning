@@ -32,3 +32,11 @@
 """
 
 # Напиши решение ниже.
+
+promo_code = " spring2026 "
+order_total = 4200
+is_first_order = False
+promo_code = promo_code.strip().lower()
+discount_applied = (promo_code == "spring2026" and order_total >= 4000) or (is_first_order and order_total >= 2000)
+
+print(f"Скидка применена: {discount_applied}")

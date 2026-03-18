@@ -8,7 +8,7 @@
 Текущий прогресс:
 
 - `[✓] variables`
-- `[ ] conditions` — решения проверены, нужно поправить `Conditions_10`
+- `[✓] conditions`
 - `[ ] loops` — теория и задачи готовы, ждём решения
 - `[ ] functions`
 - `[ ] collections`

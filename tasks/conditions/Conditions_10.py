@@ -32,3 +32,18 @@
 """
 
 # Напиши решение ниже.
+
+client_plan = "business"
+issue_type = "payment"
+response_time_hours = 5
+priority = "normal"
+
+
+if client_plan == "business" and issue_type == "payment":
+   priority = "critical"
+elif (client_plan == "business" and response_time_hours > 4) or (client_plan == "pro" and response_time_hours > 6):
+   priority = "high"
+elif response_time_hours > 24:
+   priority = "medium"
+
+print(f"Priority: {priority}")

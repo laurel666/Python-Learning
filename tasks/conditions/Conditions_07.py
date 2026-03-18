@@ -30,3 +30,11 @@
 """
 
 # Напиши решение ниже.
+
+age = 24
+monthly_income = 95000
+has_active_debts = False
+is_approved = age >= 21 and monthly_income >= 70000 and not has_active_debts
+decision = "одобрено" if is_approved else "отклонено"
+
+print(f"Решение: {decision}")

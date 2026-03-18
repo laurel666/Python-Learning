@@ -28,3 +28,15 @@
 """
 
 # Напиши решение ниже.
+
+payment_status = "paid"
+stock_status = "out_of_stock"
+order_message = "Ожидаем оплату"
+
+if payment_status == "paid":
+   if stock_status == "out_of_stock":
+      order_message = "Ожидаем поступление"
+   else:
+      order_message = "Можно отправлять"
+
+print(f"Статус заказа: {order_message}")
