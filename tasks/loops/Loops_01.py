@@ -21,3 +21,11 @@ daily_sales = [1200, 950, 1430, 1100, 990]
 """
 
 # Напиши решение ниже.
+
+daily_sales = [1200, 950, 1430, 1100, 990]
+total_sales = 0
+
+for sale in daily_sales:
+    total_sales += sale
+
+print(f"Общая выручка: {total_sales}")

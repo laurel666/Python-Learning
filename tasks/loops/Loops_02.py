@@ -21,3 +21,12 @@ order_statuses = ["paid", "pending", "paid", "cancelled", "paid", "pending"]
 """
 
 # Напиши решение ниже.
+
+order_statuses = ["paid", "pending", "paid", "canceled", "paid", "pending"]
+paid_count = 0
+
+for status in order_statuses:
+    if status == "paid":
+        paid_count += 1
+
+print(f"Оплаченных заказов: {paid_count}")

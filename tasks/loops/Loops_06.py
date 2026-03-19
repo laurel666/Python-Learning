@@ -23,3 +23,17 @@ response_times = [120, 98, None, 140, 110, None, 105]
 """
 
 # Напиши решение ниже.
+
+response_times = [120, 98, None,  140, 110, None, 105]
+count = 0
+total_time = 0
+
+for response_time in response_times:
+    if response_time is None:
+        continue
+    count += 1
+    total_time += response_time	
+
+average_response_time = total_time / count
+
+print(f"Среднее время ответа: {average_response_time}")

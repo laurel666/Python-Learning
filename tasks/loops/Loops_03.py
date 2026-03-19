@@ -28,3 +28,17 @@
 """
 
 # Напиши решение ниже.
+
+max_attempts = 5
+success_attempt = 4
+current_attempt = 1
+
+while current_attempt <= max_attempts:
+    print(f"Попытка {current_attempt}")
+    if current_attempt == success_attempt:
+        print(f"Подключение выполнено")
+        break
+    current_attempt += 1
+else:
+    print("Не удалось подключиться")
+    

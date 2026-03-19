@@ -22,3 +22,14 @@ raw_tags = ["  python ", "", " api", "data ", "  ", "backend"]
 """
 
 # Напиши решение ниже.
+
+raw_tags = ["  python ", "", " api", "data ", "  ", "backend"]
+clean_tags = []
+
+for tag in raw_tags:
+    tag = tag.strip().lower()
+    if not tag:
+        continue
+    clean_tags.append(tag)
+
+print(clean_tags)

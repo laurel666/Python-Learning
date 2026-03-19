@@ -22,3 +22,13 @@ invoice_statuses = ["paid", "paid", "overdue", "paid", "pending"]
 """
 
 # Напиши решение ниже.
+
+invoce_statuses = ["paid", "paid", "overdue", "paid", "prnding"]
+first_overdue_index = None
+
+for index, status in enumerate(invoce_statuses, start=1):
+    if status == "overdue":
+        first_overdue_index = index
+        break
+    
+print(f"Первый просроченный счёт: {first_overdue_index}")

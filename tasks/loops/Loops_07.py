@@ -19,3 +19,8 @@ tickets = ["Login issue", "Payment failed", "Profile not updating", "Email not r
 """
 
 # Напиши решение ниже.
+
+tickets = ["Login issue", "Payment failed", "Profile not updating", "Email not received"]
+
+for index, ticket in enumerate(tickets, start=1):
+    print(index, ticket, sep=". ")
